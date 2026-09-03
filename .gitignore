@@ -1,0 +1,71 @@
+# =========================
+# Python
+# =========================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+
+# =========================
+# Environment / Secrets
+# =========================
+
+.env
+.env.*
+!.env.example
+
+# =========================
+# ChromaDB
+# =========================
+
+chroma_db/
+
+# =========================
+# Temporary files
+# =========================
+
+tmp/
+temp/
+*.tmp
+
+# Downloaded audio/video files
+*.mp3
+*.wav
+*.m4a
+*.webm
+*.mp4
+*.ogg
+
+# =========================
+# Testing / Coverage
+# =========================
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+# =========================
+# IDE / Editor
+# =========================
+
+.vscode/
+.idea/
+
+# =========================
+# OS generated files
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+
+*.log
