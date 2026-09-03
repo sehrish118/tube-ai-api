@@ -94,6 +94,10 @@ The system:
 
 
 
+
+
+
+
 🧠 RAG Pipeline
 
 The project follows a Retrieval-Augmented Generation architecture.
@@ -379,12 +383,5 @@ The core YouTube → RAG pipeline is functional, with automatic Whisper transcri
 More production-level improvements will be added incrementally.
 
 👩‍💻 Author
-
+Sehrish
 Built as a hands-on project to understand backend development and AI/RAG systems by implementing the architecture step by step.
-
-
-### Ek important point
-
-README mein maine **sirf woh features `Current Features` mein rakhe hain jo humne actually implement/test kiye hain**. Jo cheezein abhi baaki hain—jaise duplicate prevention aur refined retry handling—unhein `Future Improvements` mein rakha hai. Ye GitHub README ko honest rakhta hai.
-
-Ab **`.gitignore` + `README.md` dono ready hain**. Next hum `git status` se peh
