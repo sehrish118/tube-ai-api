@@ -96,8 +96,6 @@ The system:
 
 
 
-
-
 🧠 RAG Pipeline
 
 The project follows a Retrieval-Augmented Generation architecture.
@@ -133,6 +131,10 @@ Prompt
 Llama 3.2
    ↓
 Answer
+
+
+
+
 🎙️ Automatic Whisper Fallback
 
 Not every YouTube video has an accessible transcript.
@@ -140,12 +142,17 @@ Not every YouTube video has an accessible transcript.
 Tube AI API handles this situation automatically.
 
 Normal case
+
 YouTube Video
      ↓
 YouTube Transcript API
      ↓
 Transcript
+
+
+
 Fallback case
+
 YouTube Video
      ↓
 Transcript unavailable
@@ -160,6 +167,9 @@ Generated Transcript
 
 Both approaches produce the same internal VideoTranscript structure, so the rest of the RAG pipeline does not need to know where the transcript came from.
 
+
+
+
 🛠️ Tech Stack
 Technology	Purpose
 Python	Backend programming
@@ -172,7 +182,12 @@ Llama 3.2	Text generation
 nomic-embed-text	Text embeddings
 ChromaDB	Vector database
 Pydantic	Data validation
+
+
+
+
 📁 Project Structure
+
 tube_ai_api/
 │
 ├── app/
@@ -208,6 +223,8 @@ tube_ai_api/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
+
+
 ⚙️ Requirements
 
 Before running the project, make sure you have:
@@ -218,8 +235,11 @@ Llama 3.2 model
 nomic-embed-text model
 
 Install the Python dependencies:
-
 pip install -r requirements.txt
+
+
+
+
 🤖 Ollama Models
 
 The project uses Ollama for local AI inference.
@@ -232,6 +252,8 @@ ollama pull nomic-embed-text
 Check installed models:
 
 ollama list
+
+
 ▶️ Running the API
 
 Activate the virtual environment:
@@ -248,6 +270,8 @@ The API will be available locally.
 FastAPI's interactive documentation can be accessed through:
 
 /docs
+
+
 📡 API
 Process a YouTube Video
 POST /videos/process
@@ -325,7 +349,11 @@ temporary audio/video files
 
 These files and directories are local development artifacts and should not be committed to the repository.
 
+
+
+
 🎯 Current Features
+
  YouTube URL processing
  YouTube video ID extraction
  YouTube transcript extraction
@@ -340,7 +368,11 @@ These files and directories are local development artifacts and should not be co
  Llama 3.2 integration
  FastAPI REST API
  Component-level testing
+
+
+
 🚧 Future Improvements
+
 Better transcript exception handling
 Retry mechanism for temporary failures
 Improved temporary-file cleanup
@@ -352,7 +384,10 @@ More comprehensive automated tests
 Improved chunking strategies
 Authentication and rate limiting
 Production deployment
-📚 What I Learned
+
+
+
+What I Learned
 
 This project is being built to understand how a real backend AI application works internally.
 
@@ -374,6 +409,10 @@ Local LLM inference
 API integration
 Error handling
 Backend testing
+
+
+
+
 📌 Project Status
 
 🚧 Currently under active development
@@ -382,6 +421,12 @@ The core YouTube → RAG pipeline is functional, with automatic Whisper transcri
 
 More production-level improvements will be added incrementally.
 
+
 👩‍💻 Author
-Sehrish
+
 Built as a hands-on project to understand backend development and AI/RAG systems by implementing the architecture step by step.
+
+
+
+
+
